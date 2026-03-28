@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SmartDigitalWalletBackendApplication<smart-digital-wallet-backend>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.sdwema.backend.SmartDigitalWalletBackendApplication",
+            "projectName": "smart-digital-wallet-backend",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
