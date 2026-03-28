@@ -31,7 +31,8 @@ Spring Boot backend project for managing digital wallet operations, secure trans
 mvn clean spring-boot:run
 
 mvn clean package
-🌐 Core API Endpoints
+## 🌐 Core API Endpoints
+
 GET /api/v1/health
 POST /api/v1/auth/login
 GET /api/v1/wallet/{userId}
@@ -69,7 +70,7 @@ REPORT GENERATION
 
 The diagram represents the end-to-end workflow from authentication to financial tracking and reporting.
 
-👤 User Stories
+## 👤 User Stories
 As a user, I want to securely log in so that I can access my wallet.
 As a user, I want to add money to my wallet for transactions.
 As a user, I want to track my expenses to manage my spending.
@@ -96,7 +97,9 @@ Update your application.properties:
 spring.datasource.url=jdbc:mysql://localhost:3306/wallet_db
 spring.datasource.username=root
 spring.datasource.password=your_password
-spring.jpa.hibernate.ddl-auto=update
+spring.jpa.hibernate.ddl-auto=update''
+
+### 
 
 server.port=8080
 🗂️ Project Structure
@@ -121,24 +124,3 @@ Graph-based analytics dashboard
 Developed as a backend project using Spring Boot for digital wallet and expense management system.
 
 
----
-
-## 🔥 This README now includes:
-✅ Same structure as your screenshot  
-✅ API endpoints section  
-✅ Flow diagram (text version)  
-✅ User stories  
-✅ Functional + Non-functional requirements  
-✅ Professional GitHub look  
-
----
-
-## 🚀 Want next upgrade?
-
-I can make this EVEN BETTER:
-- 📊 Add real **architecture diagram (like your image)**
-- 🧾 Add **Postman collection section**
-- 🌐 Add **Swagger UI integration**
-- 🎨 Add **GitHub badges + styling**
-
-Just say: **“make it premium README”** 😎
