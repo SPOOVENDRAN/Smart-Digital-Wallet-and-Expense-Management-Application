@@ -30,19 +30,21 @@ Spring Boot backend project for managing digital wallet operations, secure trans
 
 mvn clean spring-boot:run
 
-mvn clean package
+mvn clean packag
+e
 ## 🌐 Core API Endpoints
 
-GET /api/v1/health
-POST /api/v1/auth/login
-GET /api/v1/wallet/{userId}
-POST /api/v1/wallet/add
-POST /api/v1/wallet/transfer
-POST /api/v1/expense/add
-GET /api/v1/expense/summary/{userId}
-GET /api/v1/transactions
-GET /api/v1/analytics/report
-❤️ Health Check
+- GET /api/v1/health  
+- POST /api/v1/auth/login  
+- GET /api/v1/wallet/{userId}  
+- POST /api/v1/wallet/add  
+- POST /api/v1/wallet/transfer  
+- POST /api/v1/expense/add  
+- GET /api/v1/expense/summary/{userId}  
+- GET /api/v1/transactions  
+- GET /api/v1/analytics/report  
+# 
+# ❤️ Health Check
 curl http://localhost:8080/api/v1/health
 🔄 Module Process Flow / Design
 LOGIN / SIGNUP
@@ -71,26 +73,27 @@ REPORT GENERATION
 The diagram represents the end-to-end workflow from authentication to financial tracking and reporting.
 
 ## 👤 User Stories
-As a user, I want to securely log in so that I can access my wallet.
-As a user, I want to add money to my wallet for transactions.
-As a user, I want to track my expenses to manage my spending.
-As a user, I want to transfer money securely to other users.
-As a user, I want to view analytics so that I understand my financial habits.
-As an admin, I want system monitoring to ensure backend stability.
-⚙️ Functional Requirements
-FR-1: The system shall authenticate users securely before granting access.
-FR-2: The system shall allow users to add and manage wallet balance.
-FR-3: The system shall process secure fund transfers.
-FR-4: The system shall record and categorize expenses.
-FR-5: The system shall generate analytics and reports.
-FR-6: The system shall provide health monitoring endpoints.
-🔐 Non-Functional Requirements
-NFR-1: API responses must be low-latency under normal load.
-NFR-2: Secure authentication and data validation must be enforced.
-NFR-3: System must support logging and monitoring.
-NFR-4: Backend must be scalable and maintainable.
-NFR-5: Application must be buildable using Java 17+ and Maven 3.9+.
-⚙️ Configuration
+- As a user, I want to securely log in so that I can access my wallet.
+- As a user, I want to add money to my wallet for transactions.
+- As a user, I want to track my expenses to manage my spending.
+- As a user, I want to transfer money securely to other users.
+- As a user, I want to view analytics so that I understand my financial habits.
+- As an admin, I want system monitoring to ensure backend stability.
+## ⚙️ Functional Requirements
+- FR-1: The system shall authenticate users securely before granting access.
+- FR-2: The system shall allow users to add and manage wallet balance.
+- FR-3: The system shall process secure fund transfers.
+- FR-4: The system shall record and categorize expenses.
+- FR-5: The system shall generate analytics and reports.
+- FR-6: The system shall provide health monitoring endpoints.
+## 🔐 Non-Functional Requirements
+- NFR-1: API responses must be low-latency under normal load.
+- NFR-2: Secure authentication and data validation must be enforced.
+- NFR-3: System must support logging and monitoring.
+- NFR-4: Backend must be scalable and maintainable.
+- NFR-5: Application must be buildable using Java 17+ and Maven 3.9+.
+
+# ⚙️ Configuration
 
 Update your application.properties:
 
